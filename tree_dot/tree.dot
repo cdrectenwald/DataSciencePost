@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="price <= 4.74\ngini = 0.5\nsamples = 57841\nvalue = [45602, 45831]\nclass = Available", fillcolor="#399de501"] ;
+1 [label="number_of_reviews <= 1.87\ngini = 0.5\nsamples = 34154\nvalue = [29494, 24530]\nclass = Not Available", fillcolor="#e581392b"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="weekday <= 3.5\ngini = 0.47\nsamples = 15469\nvalue = [14974, 9480]\nclass = Not Available", fillcolor="#e581395e"] ;
+1 -> 2 ;
+3 [label="gini = 0.48\nsamples = 8955\nvalue = [8552, 5619]\nclass = Not Available", fillcolor="#e5813957"] ;
+2 -> 3 ;
+4 [label="gini = 0.47\nsamples = 6514\nvalue = [6422, 3861]\nclass = Not Available", fillcolor="#e5813966"] ;
+2 -> 4 ;
+5 [label="price <= 4.55\ngini = 0.5\nsamples = 18685\nvalue = [14520, 15050]\nclass = Available", fillcolor="#399de509"] ;
+1 -> 5 ;
+6 [label="number_of_reviews <= 3.28\ngini = 0.49\nsamples = 13185\nvalue = [8959, 11860]\nclass = Available", fillcolor="#399de53e"] ;
+5 -> 6 ;
+7 [label="gini = 0.49\nsamples = 6970\nvalue = [4857, 6111]\nclass = Available", fillcolor="#399de534"] ;
+6 -> 7 ;
+8 [label="gini = 0.49\nsamples = 6215\nvalue = [4102, 5749]\nclass = Available", fillcolor="#399de549"] ;
+6 -> 8 ;
+9 [label="gini = 0.46\nsamples = 5500\nvalue = [5561, 3190]\nclass = Not Available", fillcolor="#e581396d"] ;
+5 -> 9 ;
+10 [label="number_of_reviews <= 2.14\ngini = 0.49\nsamples = 23687\nvalue = [16108, 21301]\nclass = Available", fillcolor="#399de53e"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label="bedrooms <= 1.5\ngini = 0.5\nsamples = 12657\nvalue = [9430, 10556]\nclass = Available", fillcolor="#399de51b"] ;
+10 -> 11 ;
+12 [label="gini = 0.48\nsamples = 5370\nvalue = [3501, 5011]\nclass = Available", fillcolor="#399de54d"] ;
+11 -> 12 ;
+13 [label="gini = 0.5\nsamples = 7287\nvalue = [5929, 5545]\nclass = Not Available", fillcolor="#e5813911"] ;
+11 -> 13 ;
+14 [label="number_of_reviews <= 3.2\ngini = 0.47\nsamples = 11030\nvalue = [6678, 10745]\nclass = Available", fillcolor="#399de561"] ;
+10 -> 14 ;
+15 [label="gini = 0.45\nsamples = 5407\nvalue = [2941, 5587]\nclass = Available", fillcolor="#399de579"] ;
+14 -> 15 ;
+16 [label="gini = 0.49\nsamples = 5623\nvalue = [3737, 5158]\nclass = Available", fillcolor="#399de546"] ;
+14 -> 16 ;
+}
