@@ -1,6 +1,5 @@
-# Predict Availability for Seattle Airbnb
-This project was completed as part of the course requirements of Udacity's [Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025) certification.
-
+# Seattle AirBnB Predicted Availabiltiy
+This project was completed as part of the course requirements of Udacity's Data Scientist Nanodegree
 ## Overview
 The project used a [Kaggle dataset](https://www.kaggle.com/airbnb/seattle) containing data about listings Seattle Airbnb listings during 2016.
 
@@ -20,9 +19,9 @@ OR
 
 _You are scrolling through the airbnb site looking at different sites without having selected a date. Is there information that you use from this front page that may indicate that it is more likely that the host has listed the site as available for the dates you have in mind?_
 
-To walk-thru the full project, check out the [notebook](https://github.com/rebeccaebarnes/DSND-Project-4/blob/master/seattle_airbnb_exploration.ipynb).
+To walk-thru the full project, check out the notebook in this repository. 
 
-To read the blog post associated with the article, you can go [here](https://medium.com/@rebeccaebarnes/this-will-make-you-think-like-a-supercomputer-39898ab9eaf8).
+To read the blog post associated with the article, you can go [here](https://medium.com/@cdrectenwald/leveraging-machine-learning-to-unleash-airbnb-insights-17414558fad9?sk=4d8e906ed527d72b406bf32fe11bf874).
 
 ## Files
 ### Data
@@ -95,4 +94,3 @@ The key visualizations for this project were developed from scikit-learn documen
 - [Plotting learning curves](https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html)
 - [Feature importances with forests of trees](https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html)
 
-The process for visualizing the decision trees was obtained from [this post](https://towardsdatascience.com/how-to-visualize-a-decision-tree-from-a-random-forest-in-python-using-scikit-learn-38ad2d75f21c), using http://webgraphviz.com/.
