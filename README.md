@@ -1,4 +1,4 @@
-# Seattle AirBnB Predicted Availabiltiy
+# Seattle AirBnB Factor Analysis
 This project was completed as part of the course requirements of Udacity's Data Scientist Nanodegree
 ## Overview
 The project used a [Kaggle dataset](https://www.kaggle.com/airbnb/seattle) containing data about listings Seattle Airbnb listings during 2016.
