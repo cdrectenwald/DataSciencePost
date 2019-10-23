@@ -41,9 +41,13 @@ To read the blog post associated with the article, you can go [here](https://med
 
 ## Technologies Used
 - Python
-- Libraries: sklearn, pandas, numpy, matplotlib, seaborn, nltk
+- Libraries: sklearn.metrics(r2_score, mean_Squared_error),sklearn.model_selection(train_test_split module),sklearn.linear_model(LinearRegression module), pandas, numpy, matplotlib, seaborn, nltk, 
 - Jupyter Notebook
-
+# Project Motivation
+I wanted to explore AirBnB data from the Seattle area to better understand underlying factors that factored into the price of an AirBnB. I also aimed to answer the following 3 questions using the CRISP-DM process:
+    1. What is the most expensive neighborhood? Which is the cheapeast?
+    2. Do customer reviews factor into a AirBnB's rating and/or cost? For instance, are there more comments for well regarded AirBnBs?
+    3. What dictates an AirBnB's rating? Can these factors be used to predict an AirBnB's rating?
 ## Model Development
 ### Data Wrangling
 An extensive review of the available fields in the data was conducted. Fields that did not fit within the proposed business case in any way were dropped. Rows that were missing values in the _bathrooms_, _bedrooms_, _beds_, and _host_is_superhost_ were dropped. Type conversions were performed as necessary.
@@ -60,33 +64,15 @@ Custom transformers allowed for the identification of skewed columns with a natu
 ### Feature Inclusion
 The inclusion of features in the model prioritized minimizing the number of features to be included in the model. This was approached by identifying salient pieces of information from an Airbnb listing, limiting a model to the most important features, and investigating the impact of additional features.
 
-<p align="center">
-  <img src="airbnb_listing.PNG">
-</p>
-
 ## Key Findings
 
-Using a Random Forest Classifier, it was possible to predict whether a host made a listing available with approximately 90% accuracy using only information that is available when browsing the listings and the day of the week for which to predict.
+The following results are a brief summary of the data exploration contained in the project:
 
-<p align="center">
-  <img src="final_model_cm.png">
-</p>
+The most expensive neighborhood is Southeast Magnolia and the cheapest is Rainier Beach.
+AirBnBs with higher ratings tend to have more comments than AirBnBs with low ratings.
+The LinearRegression model found r-squared values of 0.4 and 0.29 for training and test data respectively on rating.
+The variables that had the highest effect on rating were transit, and amenities (internet and dogs).
 
-The final model underfit slightly, which is likely due to the intentional limiting of features included in the model.
-
-<p align="center">
-  <img src="final_model_underfit.png">
-</p>
-
-The most important features in the classifier were _price_, _number of reviews_, the _day of the week_, number of _bedrooms_ and whether the _host is a superhost_. Whether the listing name contained the words _heart_ and _bright_ were the next two most important features.
-
-<p align="center">
-  <img src="final_model_importances.png">
-</p>
-
-To further understand the model, visualizations of some of the tree estimators were produced. Below is a visualization of one of the trees at a depth of four. An orange color indicates a greater likelihood of _Not Available_ and a blue color indicates a greater likelihood of _Available_. The darker the color, the more pure the node.
-
-!['message'](final_model_tree.png)
 
 ## Acknowledgements
 The key visualizations for this project were developed from scikit-learn documentation for
